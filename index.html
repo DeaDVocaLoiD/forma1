@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Welcome.to.the.lungle!</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/bg.png">
+
+
+  <style>
+      .fon {
+      background: #fff url(img/bg.png)no-repeat;
+      width: 800px;
+      height: 600px;
+      position: relative;
+    }
+    
+    .general {
+      padding-right: 0px;
+      padding-left: 30px;
+      width: 440px;
+      margin: auto;
+      position: absolute;
+      top: 0px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 470px;
+      background-color: white;
+      border-radius: 4px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    .general__word {
+      padding-top: 5%;
+      margin: auto;
+      font-family: Arial;
+      font-size: 24px;
+      font-weight: 700;
+      color: rgb(27, 28, 29);
+      text-align: -webkit-left;
+    }
+    
+    .general__nextword {
+      margin-bottom: 30px;
+      font-family: Arial;
+      color: #797b7f;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+    }
+    
+    .general__pinkword {
+      font-family: Arial;
+      color: #ea355a;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+    }
+    
+    .general__pinkword:link {
+      background: #ffe;
+      color: #0000d0;
+    }
+    
+    .general__pinkword:hover {
+      background: #ffe;
+      color: #bd1962;
+    }
+    
+    .form {
+      margin-top: 40px;
+    }
+    
+    .form__table1 {
+      margin-bottom: 4%;
+      display: inline-block;
+      margin-right: 10px;
+      border-radius: 4px;
+      background-color: #f0f0f0;
+      width: 193px;
+      height: 40px;
+      list-style-type: none;
+      font-family: Arial;
+    }
+    
+    .form__table2 {
+      margin-bottom: 4%;
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #f0f0f0;
+      width: 193px;
+      height: 40px;
+      list-style-type: none;
+      font-family: Arial;
+    }
+    
+    .form__table3 {
+      margin-bottom: 4%;
+      border-radius: 4px;
+      background-color: #f0f0f0;
+      width: 400px;
+      height: 40px;
+      list-style-type: none;
+      display: inline-block;
+      font-family: Arial;
+    }
+    
+    .form__table4 {
+      border-radius: 4px;
+      margin-bottom: 4%;
+      background-color: #f0f0f0;
+      width: 400px;
+      height: 40px;
+      list-style-type: none;
+      font-family: Arial;
+    }
+    
+    .form__table5 {
+      background-color: #ea355a;
+      box-shadow: 0px 3px 0px 0px #bd1962;
+      width: 400px;
+      height: 50px;
+      list-style-type: none;
+      font-family: Arial;
+    }
+    
+    .general__nextword2 {
+      font-family: Arial;
+      color: #797b7f;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+    }
+    
+    .general__pinkword2 {
+      font-family: Arial;
+      color: #e52e66;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+    }
+    
+    .form__none {
+      padding: 0;
+    }
+    
+    .form__text2 {
+      top: 140px;
+      left: 260px;
+      position: absolute;
+      font-family: Arial;
+      color: #797b7f;
+      font-size: 14px;
+      font-weight: 400;
+      text-align: left;
+    }
+    
+    .form__text1 {
+      left: 55px;
+      top: 140px;
+      position: absolute;
+      font-family: Arial;
+      color: #797b7f;
+      font-size: 14px;
+      font-weight: 400;
+      text-align: left;
+    }
+    
+    .form__text3 {
+      left: 55px;
+      top: 202px;
+      position: absolute;
+      font-family: Arial;
+      color: #797b7f;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    
+    .form__text4 {
+      top: 264px;
+      left: 55px;
+      position: absolute;
+      font-family: Arial;
+      color: #797b7f;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    
+    .form__text5 {
+      left: 166px;
+      font-family: Arial;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 700;
+      position: absolute;
+    }
+    
+    .form-row1 {
+      float: left;
+      margin-right: 7px;
+      margin-bottom: 8px;
+      overflow: hidden;
+    }
+    
+    .form-row2 {
+      margin-bottom: 8px;
+      overflow: hidden;
+    }
+    
+    .form-row3 {
+      margin-bottom: 8px;
+      overflow: hidden;
+    }
+    
+    .form-row4 {
+      margin-bottom: 8px;
+      overflow: hidden;
+    }
+    
+    .form-row5 {
+      margin-bottom: 8px;
+      overflow: hidden;
+    }
+    
+    .form-row input {
+      float: right;
+      height: 19px;
+      line-height: 19px;
+      margin: 0px;
+      padding: 0px 5px;
+      width: 287px;
+      border: 1px solid #ABADB3;
+    }
+    
+    .reg-form {
+      width: 416px;
+      margin: 0 auto;
+      margin-right: 26px;
+    }
+    
+    .form-row textarea {
+      height: 90px;
+      line-height: 16px;
+      font-size: 12px;
+      padding: 0px 5px;
+      width: 404px;
+      border: 1px solid #ABADB3;
+    }
+    
+    .form-row input[type=submit] {
+      padding: 5px;
+      height: 25px;
+      width: 100%;
+      line-height: 10px;
+      background: #337AB7;
+      color: white;
+    }
+    
+    .form-row input[type=submit]:hover {
+      background: #286090;
+    }
+    
+    input#form_fname1 {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #f0f0f0;
+      width: 193px;
+      font-family: Arial;
+      color: #797b7f;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      height: 40px;
+      border: none;
+      text-align: -webkit-center;
+    }
+    
+    input#form_fname2 {
+      border-radius: 4px;
+      background-color: #f0f0f0;
+      width: 193px;
+      height: 40px;
+      font-family: Arial;
+      color: #797b7f;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      border: none;
+      text-align: -webkit-center;
+    }
+    
+    input#form_fname3 {
+      border: none;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      float: left;
+      border-radius: 4px;
+      background-color: #f0f0f0;
+      width: 400px;
+      height: 40px;
+      font-family: Arial;
+      color: #797b7f;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      text-align: -webkit-center;
+    }
+    
+    input#form_fname4 {
+      border: none;
+      float: left;
+      border-radius: 4px;
+      background-color: #f0f0f0;
+      width: 400px;
+      height: 40px;
+      font-family: Arial;
+      color: #797b7f;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      text-align: -webkit-center;
+      margin-bottom: 10px;
+    }
+    
+    input#form_fname5:after {
+      clear: both;
+    }
+    
+    input[type="text"] {
+      padding: 3px;
+      background: #333;
+      color: #053f38;
+      border: 1px solid #ccc;
+    }
+    
+    input[type="text"]::-webkit-input-placeholder {
+      color: #ccc;
+    }
+    
+    input[type="text"]::-moz-placeholder {
+      color: #ccc;
+    }
+    
+    .form-row5 {
+      background-color: #ea355a;
+      box-shadow: 0px 3px 0px 0px #bd1962;
+      width: 405px;
+      height: 50px;
+      border-radius: 5px;
+    }
+    
+    input#form_button {
+      font-family: Arial;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 700;
+      border: none;
+      background-color: #ea355a;
+      box-shadow: 0px 3px 0px 0px #bd1962;
+      width: 100%;
+      height: 100%;
+    }
+    
+    input#form_button:hover {
+      background: #bd1962;
+      color: #ffe;
+
+  </style>
+
+
+
+</head>
+
+<body class="fon">
+  <div class="table">
+    <div class="general">
+
+      <p class="general__word"><img src="img/sign%20up%20icon.png"> Create your free acount
+      </p>
+      <p class="general__nextword">
+        Come and join our cool and amazing community, fill in your details
+        <br> to get started. Already have an account? <span class="general__pinkword"><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BB%D0%B8%D0%BA%D0%B1%D0%B5%D0%B9%D1%82"> Log in.</a></span></p>
+      <form method='post' class='reg-form'>
+
+        <div class='form-row1'>
+          <label for='form_fname'></label>
+          <input type='text' id='form_fname1' placeholder="First name">
+        </div>
+
+        <div class='form-row2'>
+          <label for='form_sname'></label>
+          <input type='text' id='form_fname2' placeholder="Last name">
+        </div>
+
+        <div class='form-row3'>
+          <label for='form_email'></label>
+          <input type='text' id='form_fname3' placeholder="Email adress">
+        </div>
+
+        <div class='form-row4'>
+          <label for='form_password'></label>
+          <input type='text' id='form_fname4' placeholder="Password">
+        </div>
+
+        <div class="form-row5">
+
+          <input type="submit" id='form_button' value='Sign up for free'>
+
+        </div>
+
+      </form>
+      <p class="general__nextword2">
+        By clicking on “Sign up for free”, you agree to the <span class="general__pinkword"><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BB%D0%B8%D0%BA%D0%B1%D0%B5%D0%B9%D1%82">Terms of Service</a></span> and
+        <br> the <span class="general__pinkword"><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BB%D0%B8%D0%BA%D0%B1%D0%B5%D0%B9%D1%82">Privacy Policy</a></span>
+      </p>
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
