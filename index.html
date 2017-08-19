@@ -9,7 +9,7 @@
 
 
   <style>
-      .fon {
+    .fon {
       background: #fff url(img/bg.png)no-repeat;
       width: 800px;
       height: 600px;
@@ -128,7 +128,7 @@
       font-family: Arial;
     }
     
-    .general__nextword2 {
+    .general-two {
       font-family: Arial;
       color: #797b7f;
       font-size: 12px;
@@ -137,7 +137,7 @@
       text-align: left;
     }
     
-    .general__pinkword2 {
+    .general-two__pinkword-two {
       font-family: Arial;
       color: #e52e66;
       font-size: 12px;
@@ -201,31 +201,32 @@
       position: absolute;
     }
     
-    .form-row1 {
+    .reg-form__form-one {
       float: left;
       margin-right: 7px;
       margin-bottom: 8px;
-      overflow: hidden;
     }
     
-    .form-row2 {
+    .reg-form__form-two {
       margin-bottom: 8px;
-      overflow: hidden;
     }
     
-    .form-row3 {
+    .reg-form__form--third {
       margin-bottom: 8px;
-      overflow: hidden;
     }
     
-    .form-row4 {
+    .reg-form__form-four {
       margin-bottom: 8px;
-      overflow: hidden;
     }
     
-    .form-row5 {
+    .reg-form__form-five {
       margin-bottom: 8px;
-      overflow: hidden;
+      box-shadow: 0px 3px 0px 0px #bd1962;
+      width: 405px;
+      border-radius: 4px;
+      background-color: #ea355a;
+      box-shadow: 0px 3px 0px 0px #bd1962;
+      height: 50px;
     }
     
     .form-row input {
@@ -301,7 +302,6 @@
       border: none;
       margin-bottom: 10px;
       margin-top: 10px;
-      float: left;
       border-radius: 4px;
       background-color: #f0f0f0;
       width: 400px;
@@ -317,7 +317,6 @@
     
     input#form_fname4 {
       border: none;
-      float: left;
       border-radius: 4px;
       background-color: #f0f0f0;
       width: 400px;
@@ -330,10 +329,7 @@
       text-align: left;
       text-align: -webkit-center;
       margin-bottom: 10px;
-    }
-    
-    input#form_fname5:after {
-      clear: both;
+      margin-top: 10px;
     }
     
     input[type="text"] {
@@ -351,14 +347,6 @@
       color: #ccc;
     }
     
-    .form-row5 {
-      background-color: #ea355a;
-      box-shadow: 0px 3px 0px 0px #bd1962;
-      width: 405px;
-      height: 50px;
-      border-radius: 5px;
-    }
-    
     input#form_button {
       font-family: Arial;
       color: #ffffff;
@@ -369,11 +357,33 @@
       box-shadow: 0px 3px 0px 0px #bd1962;
       width: 100%;
       height: 100%;
+      border-radius: 4px;
     }
     
     input#form_button:hover {
       background: #bd1962;
       color: #ffe;
+    }
+    
+    a:link {
+      text-decoration: none;
+      /* Убирает подчеркивание для ссылок */
+    }
+    
+    a:visited {
+      text-decoration: none;
+    }
+    
+    a:active {
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+      /* Делает ссылку подчеркнутой при наведении на нее курсора */
+      color: #e22a6c;
+      /* Цвет ссылки */
+    }
 
   </style>
 
@@ -382,58 +392,50 @@
 </head>
 
 <body class="fon">
-  <div class="table">
-    <div class="general">
+  <div class="general">
 
-      <p class="general__word"><img src="img/sign%20up%20icon.png"> Create your free acount
-      </p>
-      <p class="general__nextword">
-        Come and join our cool and amazing community, fill in your details
-        <br> to get started. Already have an account? <span class="general__pinkword"><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BB%D0%B8%D0%BA%D0%B1%D0%B5%D0%B9%D1%82"> Log in.</a></span></p>
-      <form method='post' class='reg-form'>
+    <p class="general__word"><img src="img/sign%20up%20icon.png"> Create your free acount
+    </p>
+    <p class="general__nextword">
+      Come and join our cool and amazing community, fill in your details
+      <br> to get started. Already have an account? <span class="general__pinkword"><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BB%D0%B8%D0%BA%D0%B1%D0%B5%D0%B9%D1%82"> Log in.</a></span></p>
+    <form method='post' class='reg-form'>
 
-        <div class='form-row1'>
-          <label for='form_fname'></label>
-          <input type='text' id='form_fname1' placeholder="First name">
-        </div>
+      <div class='reg-form__form-one'>
+        <label for='form_fname'></label>
+        <input type='text' id='form_fname1' placeholder="First name">
+      </div>
 
-        <div class='form-row2'>
-          <label for='form_sname'></label>
-          <input type='text' id='form_fname2' placeholder="Last name">
-        </div>
+      <div class='reg-form__form-two'>
+        <label for='form_sname'></label>
+        <input type='text' id='form_fname2' placeholder="Last name">
+      </div>
 
-        <div class='form-row3'>
-          <label for='form_email'></label>
-          <input type='text' id='form_fname3' placeholder="Email adress">
-        </div>
+      <div class='reg-form__form-third'>
+        <label for='form_email'></label>
+        <input type='text' id='form_fname3' placeholder="Email adress">
+      </div>
 
-        <div class='form-row4'>
-          <label for='form_password'></label>
-          <input type='text' id='form_fname4' placeholder="Password">
-        </div>
+      <div class='reg-form__form-four'>
+        <label for='form_password'></label>
+        <input type='text' id='form_fname4' placeholder="Password">
+      </div>
 
-        <div class="form-row5">
+      <div class="reg-form__form-five">
 
-          <input type="submit" id='form_button' value='Sign up for free'>
+        <input type="submit" id='form_button' value='Sign up for free'>
 
-        </div>
+      </div>
 
-      </form>
-      <p class="general__nextword2">
-        By clicking on “Sign up for free”, you agree to the <span class="general__pinkword"><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BB%D0%B8%D0%BA%D0%B1%D0%B5%D0%B9%D1%82">Terms of Service</a></span> and
-        <br> the <span class="general__pinkword"><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BB%D0%B8%D0%BA%D0%B1%D0%B5%D0%B9%D1%82">Privacy Policy</a></span>
-      </p>
-
+    </form>
+    <p class="general-two">
+      By clicking on “Sign up for free”, you agree to the <span class="general-two__pinkword"><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BB%D0%B8%D0%BA%D0%B1%D0%B5%D0%B9%D1%82">Terms of Service</a></span> and
+      <br> the <span class="general-two__pinkword"><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BB%D0%B8%D0%BA%D0%B1%D0%B5%D0%B9%D1%82">Privacy Policy</a></span>
+    </p>
 
 
-
-
-
-
-
-
-    </div>
   </div>
+
 
 
 
