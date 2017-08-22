@@ -200,26 +200,28 @@
       font-weight: 700;
       position: absolute;
     }
+   
     
-    .reg-form__form-one {
-      float: left;
-      margin-right: 7px;
+    .reg-form__form--one {
+      display: inline-block;
+      margin-right: 4px;
       margin-bottom: 8px;
     }
     
-    .reg-form__form-two {
+    .reg-form__form--two {
       margin-bottom: 8px;
+      display: inline-block;
     }
     
     .reg-form__form--third {
+  
+    }
+    
+    .reg-form__form--four {
       margin-bottom: 8px;
     }
     
-    .reg-form__form-four {
-      margin-bottom: 8px;
-    }
-    
-    .reg-form__form-five {
+    .reg-form__form--five {
       margin-bottom: 8px;
       box-shadow: 0px 3px 0px 0px #bd1962;
       width: 405px;
@@ -230,7 +232,6 @@
     }
     
     .form-row input {
-      float: right;
       height: 19px;
       line-height: 19px;
       margin: 0px;
@@ -239,11 +240,6 @@
       border: 1px solid #ABADB3;
     }
     
-    .reg-form {
-      width: 416px;
-      margin: 0 auto;
-      margin-right: 26px;
-    }
     
     .form-row textarea {
       height: 90px;
@@ -399,29 +395,29 @@
     <p class="general__nextword">
       Come and join our cool and amazing community, fill in your details
       <br> to get started. Already have an account? <span class="general__pinkword"><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BB%D0%B8%D0%BA%D0%B1%D0%B5%D0%B9%D1%82"> Log in.</a></span></p>
-    <form method='post' class='reg-form'>
+    <form method='post' class='reg-form__form'>
 
-      <div class='reg-form__form-one'>
+      <div class='reg-form__form reg-form__form--one'>
         <label for='form_fname'></label>
         <input type='text' id='form_fname1' placeholder="First name">
       </div>
 
-      <div class='reg-form__form-two'>
+      <div class='reg-form__form reg-form__form--two'>
         <label for='form_sname'></label>
         <input type='text' id='form_fname2' placeholder="Last name">
       </div>
 
-      <div class='reg-form__form-third'>
+      <div class='reg-form__form reg-form__form--third'>
         <label for='form_email'></label>
         <input type='text' id='form_fname3' placeholder="Email adress">
       </div>
 
-      <div class='reg-form__form-four'>
+      <div class='reg-form__form reg-form__form--four'>
         <label for='form_password'></label>
         <input type='text' id='form_fname4' placeholder="Password">
       </div>
 
-      <div class="reg-form__form-five">
+      <div class="reg-form__form reg-form__form--five">
 
         <input type="submit" id='form_button' value='Sign up for free'>
 
